@@ -169,6 +169,7 @@ class Api extends AbstractApi
                 'ETag'               => $this->params->etag(),
                 'contentDisposition' => $this->params->contentDisposition(),
                 'contentEncoding'    => $this->params->contentEncoding(),
+                'accessControlAllowOrigin' => $this->params->contentAccessControlAllowOrigin(),
                 'deleteAt'           => $this->params->deleteAt(),
                 'deleteAfter'        => $this->params->deleteAfter(),
                 'metadata'           => $this->params->metadata('object'),

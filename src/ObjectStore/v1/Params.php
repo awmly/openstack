@@ -403,6 +403,15 @@ EOT
         ];
     }
 
+    public function contentAccessControlAllowOrigin(): array
+    {
+        return [
+            'location'    => self::HEADER,
+            'sentAs'      => 'Access-Control-Allow-Origin',
+            'description' => ''
+        ];
+    }
+
     public function copyFrom(): array
     {
         return [
